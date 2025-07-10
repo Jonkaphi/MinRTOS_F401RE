@@ -168,6 +168,7 @@ void OS_delay(uint32_t ticks){
     
 __attribute__ ((naked))
 void PendSV_Handler(void){
+	//disassembly copied over for the sake of easier writting
 	//     08000aae:   cpsid   i
 	// 08000ab0:   nop
 	// 60                if(OS_curr != (OSThread*)0){
